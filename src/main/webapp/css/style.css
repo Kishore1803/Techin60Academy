@@ -1,0 +1,208 @@
+@charset "UTF-8";/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* logo-img */
+.logo-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* index page */
+.box h4 {
+    font: bold;
+}
+
+.box:hover {
+    transform: translateY(-12px) scale(1.03);
+    cursor: pointer;
+}
+
+/* about */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd, #212529);
+    color: white;
+    padding: 100px 0;
+}
+
+.feature-card {
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.mission-section {
+    background: #f8f9fa;
+}
+
+.container h2 {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.about-image img {
+    width: 85%;
+    border-radius: 15px;
+}
+
+/* service */
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #212529);
+    color: white;
+    padding: 100px 0;
+}
+
+.service-card {
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.cta-section {
+    background: #0d6efd;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* privacy */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd, #212529);
+    color: white;
+    padding: 100px 0;
+}
+
+.privacy-card {
+    transition: .3s;
+}
+
+.privacy-card:hover {
+    transform: translateY(-5px);
+}
+
+/* contact */
+.hero-section-contact {
+    background: linear-gradient(135deg, #0d6efd, #212529);
+    color: white;
+    padding: 100px 0;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-box i {
+    font-size: 28px;
+}
+
+.social-icons a {
+    font-size: 28px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.msg {
+    resize: none;
+    height: 150px;
+}
+
+.contact-card {
+    border-radius: 15px;
+}
+
+
+/* login */
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.google-btn {
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.login-btn {
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* register */
+.register-card {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.google-btn {
+    border: 1px solid #ddd;
+    transition: .3s;
+}
+
+.google-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.register-btn {
+    transition: .3s;
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 480px) {
+    .latest{
+        margin-top: 10px;
+    }
+    .container p {
+        text-align: left;
+    }
+
+    .about-image {
+        padding-left: 50px;
+    }
+}
