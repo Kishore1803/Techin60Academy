@@ -1,19 +1,22 @@
-fetch("contact", {
-	method: "POST",
-	body: new
-	FormData(document.getElementById("contactForm"))
-})
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
 
-.then(response => {
-	if(response.ok){
-		alert("Your Request Has Sent Succesfully!");
-		
-		document.getElementById("contactForm").reset();
-		}else{
-			alert("Failed To Send Your Request. Please Try Again Later");
-		}
-})
-.catch(error => {
-	console.error(error);
-	alert("Server Error! Please Try Again Later");
+    let formData = new FormData(this);
+
+    fetch("contact", {
+        method: "POST",
+        body: formData
+    })
+    .then((response) => {
+        if (response.ok) {
+            alert("✅ Your request has been sent successfully!");
+            document.getElementById("contactForm").reset();
+        } else {
+            alert("❌ Failed to send your request. Please try again later.");
+        }
+    })
+    .catch((error) => {
+        console.error(error);
+        alert("❌ Server error! Please try again later.");
+    });
 });
